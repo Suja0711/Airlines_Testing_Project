@@ -2,32 +2,32 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="32" started-at="2022-12-01T10:25:04Z" finished-at="2022-12-01T10:25:04Z">
+  <suite name="Default suite" duration-ms="67466" started-at="2022-12-03T11:41:39Z" finished-at="2022-12-03T11:42:47Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="32" started-at="2022-12-01T10:25:04Z" finished-at="2022-12-01T10:25:04Z">
-      <class name="org.test.PacificairTesting">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:org.test.PacificairTesting@7085bdee]" name="beforeClass" is-config="true" duration-ms="13" started-at="2022-12-01T10:25:04Z" finished-at="2022-12-01T10:25:04Z">
+    <test name="Default test" duration-ms="67466" started-at="2022-12-03T11:41:39Z" finished-at="2022-12-03T11:42:47Z">
+      <class name="org.test.BookTesting">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:org.test.BookTesting@13805618]" name="beforeClass" is-config="true" duration-ms="41387" started-at="2022-12-03T11:41:39Z" finished-at="2022-12-03T11:42:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:org.test.PacificairTesting@7085bdee]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2022-12-01T10:25:04Z" finished-at="2022-12-01T10:25:04Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:org.test.BookTesting@13805618]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2022-12-03T11:42:21Z" finished-at="2022-12-03T11:42:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="test()[pri:0, instance:org.test.PacificairTesting@7085bdee]" name="test" duration-ms="5" started-at="2022-12-01T10:25:04Z" finished-at="2022-12-01T10:25:04Z">
+        <test-method status="PASS" signature="Book1()[pri:0, instance:org.test.BookTesting@13805618]" name="Book1" duration-ms="26008" started-at="2022-12-03T11:42:21Z" finished-at="2022-12-03T11:42:47Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:org.test.PacificairTesting@7085bdee]" name="afterMethod" is-config="true" duration-ms="0" started-at="2022-12-01T10:25:04Z" finished-at="2022-12-01T10:25:04Z">
+        </test-method> <!-- Book1 -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:org.test.BookTesting@13805618]" name="afterMethod" is-config="true" duration-ms="1" started-at="2022-12-03T11:42:47Z" finished-at="2022-12-03T11:42:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:org.test.PacificairTesting@7085bdee]" name="afterClass" is-config="true" duration-ms="0" started-at="2022-12-01T10:25:04Z" finished-at="2022-12-01T10:25:04Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:org.test.BookTesting@13805618]" name="afterClass" is-config="true" duration-ms="0" started-at="2022-12-03T11:42:47Z" finished-at="2022-12-03T11:42:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- org.test.PacificairTesting -->
+      </class> <!-- org.test.BookTesting -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -1,16 +1,22 @@
 package org.test;
 
+import org.openqa.selenium.interactions.Actions;
+
+import org.pages.BookingPage;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+import org.utility.BaseClass;
 
 
-public class PacificairTesting {
-	
+
+public class PacificairTesting extends BaseClass {
+	static BookingPage bk;
 	@BeforeClass
 	public void beforeClass() {
+		
 		System.out.println("Before class method");
 	}
 	
@@ -30,8 +36,8 @@ public class PacificairTesting {
 	}
 	
 	@Test(enabled=true)
-	private void test() {
-		System.out.println("Test method1------------");
+	private void Book1() {
+		
 	}
 
 }
