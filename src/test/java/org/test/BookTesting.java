@@ -1,5 +1,4 @@
-
-	package org.test;
+package org.test;
 
 	import org.openqa.selenium.interactions.Actions;
 
@@ -56,4 +55,3 @@
 				}
 
 	}
-
