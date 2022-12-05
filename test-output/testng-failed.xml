@@ -3,15 +3,21 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="org.test.PacificairTesting">
+      <class name="org.test.BookTesting">
         <methods>
+<<<<<<< HEAD
           <include name="afterClass"/>
           <include name="manageFlightStatus" invocation-numbers="0"/>
           <include name="afterMethod"/>
+=======
+>>>>>>> 855d84836e71237196b32d2bb803dfe763d007e5
           <include name="beforeClass"/>
           <include name="beforeMethod"/>
+          <include name="Book1"/>
+          <include name="afterClass"/>
+          <include name="afterMethod"/>
         </methods>
-      </class> <!-- org.test.PacificairTesting -->
+      </class> <!-- org.test.BookTesting -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
