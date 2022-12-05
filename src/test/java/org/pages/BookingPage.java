@@ -20,6 +20,16 @@ private WebElement btnbook;
 private WebElement btnflight;
 
 
+@FindBy(xpath="//div[@class='o-form_input marker pin']")
+private WebElement from;
+
+
+
+public WebElement getFrom() {
+	return from;
+}
+
+
 public WebElement getBtnflight() {
 	return btnflight;
 }

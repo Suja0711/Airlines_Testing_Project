@@ -19,6 +19,7 @@
 		public void beforeClass() {
 			browserLaunch("chrome");
 			urlLaunch("https://www.cebupacificair.com/");
+			implicitWait(3000);
 			maximize();
 			bk=new BookingPage();
 		
@@ -45,8 +46,14 @@
 			Actions a=new Actions(driver);
 			a.moveToElement(bk.getBtnbook()).perform();
 			clickBtn(bk.getBtnflight());
+				}
+		
+		@Test(enabled=true)
+		private void Book2() {
 			
-		}
+		clickBtn(bk.getFrom());
+			
+				}
 
 	}
 
