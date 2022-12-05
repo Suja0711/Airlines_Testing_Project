@@ -7,7 +7,6 @@
         <methods>
           <include name="afterClass"/>
           <include name="manageFlightStatus" invocation-numbers="0"/>
-          <include name="manageBookModule" invocation-numbers="0"/>
           <include name="afterMethod"/>
           <include name="beforeClass"/>
           <include name="beforeMethod"/>

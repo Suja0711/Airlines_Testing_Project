@@ -38,8 +38,8 @@ public class PacificairTesting extends BaseClass{
 		System.out.println("Before class method");
 		browserLaunch("chrome");
 		urlLaunch("https://www.cebupacificair.com/");
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(1000, TimeUnit.MILLISECONDS);
+		maximize();
+		implicitWait(10);
 		wt = new WebDriverWait(driver, 5000);
 		mg = new ManageLoginPage();
 		as = new Actions(driver);
@@ -60,9 +60,9 @@ public class PacificairTesting extends BaseClass{
 	}
 	
 	@Test(dataProvider="loginModule", dataProviderClass=DataCollection.class,priority=-4)
-	private void loginMethod(String str1, String loginLnkXpath, String loginBtnXpath, String subLnkXpath, String email, String pass) {
+	private void loginMethod(String closeBtnXpath, String loginLnkXpath, String loginBtnXpath, String subLnkXpath, String email, String pass) {
 		System.out.println("Login Method ------------");
-		mg.clickLoginBtn(str1,loginLnkXpath,loginBtnXpath,subLnkXpath,email,pass);
+		mg.clickLoginBtn(closeBtnXpath,loginLnkXpath,loginBtnXpath,subLnkXpath,email,pass);
 	}
 	
 	@Test(dataProvider="chkInModule",dataProviderClass=DataCollection.class,priority=-3)

@@ -73,11 +73,12 @@ public class ManageLoginPage extends BaseClass{
 		}	
 	}
 		
-		public void clickLoginBtn(String str1,String loginLnkXpath,String loginBtnXpath,String subLnkXpath,String email, String pass) {
+		public void clickLoginBtn(String closeBtnXpath,String loginLnkXpath,String loginBtnXpath,String subLnkXpath,String email, String pass) {
 			Actions as = new Actions(driver);
 			WebDriverWait wt = new WebDriverWait(driver, 5000);
-			wt.until(ExpectedConditions.elementToBeClickable(By.xpath(str1)));
-			WebElement ele = driver.findElement(By.xpath(str1));
+			//wt.until(ExpectedConditions.elementToBeClickable(By.xpath(closeBtnXpath)));
+			wt.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(closeBtnXpath)));
+			WebElement ele = driver.findElement(By.xpath(closeBtnXpath));
 			ele.click();
 			wt.until(ExpectedConditions.elementToBeClickable(By.xpath(loginLnkXpath)));
 			WebElement loginLnk = driver.findElement(By.xpath(loginLnkXpath));
