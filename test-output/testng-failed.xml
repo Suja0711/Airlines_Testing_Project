@@ -5,16 +5,10 @@
     <classes>
       <class name="org.test.BookTesting">
         <methods>
-<<<<<<< HEAD
-          <include name="afterClass"/>
-          <include name="manageFlightStatus" invocation-numbers="0"/>
-          <include name="afterMethod"/>
-=======
->>>>>>> 855d84836e71237196b32d2bb803dfe763d007e5
           <include name="beforeClass"/>
           <include name="beforeMethod"/>
-          <include name="Book1"/>
           <include name="afterClass"/>
+          <include name="Book2"/>
           <include name="afterMethod"/>
         </methods>
       </class> <!-- org.test.BookTesting -->
