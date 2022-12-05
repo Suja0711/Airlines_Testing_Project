@@ -1,29 +1,143 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="32" started-at="2022-12-01T10:25:04Z" finished-at="2022-12-01T10:25:04Z">
+  <suite name="Default suite" duration-ms="46957" started-at="2022-12-05T14:05:58Z" finished-at="2022-12-05T14:06:45Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="32" started-at="2022-12-01T10:25:04Z" finished-at="2022-12-01T10:25:04Z">
+    <test name="Default test" duration-ms="46957" started-at="2022-12-05T14:05:58Z" finished-at="2022-12-05T14:06:45Z">
       <class name="org.test.PacificairTesting">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:org.test.PacificairTesting@7085bdee]" name="beforeClass" is-config="true" duration-ms="13" started-at="2022-12-01T10:25:04Z" finished-at="2022-12-01T10:25:04Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:org.test.PacificairTesting@72d818d1]" name="beforeClass" is-config="true" duration-ms="6996" started-at="2022-12-05T14:05:58Z" finished-at="2022-12-05T14:06:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:org.test.PacificairTesting@7085bdee]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2022-12-01T10:25:04Z" finished-at="2022-12-01T10:25:04Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:org.test.PacificairTesting@72d818d1]" name="beforeMethod" is-config="true" duration-ms="5" started-at="2022-12-05T14:06:05Z" finished-at="2022-12-05T14:06:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="test()[pri:0, instance:org.test.PacificairTesting@7085bdee]" name="test" duration-ms="5" started-at="2022-12-01T10:25:04Z" finished-at="2022-12-01T10:25:04Z">
+        <test-method status="PASS" signature="loginMethod(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:-4, instance:org.test.PacificairTesting@72d818d1]" name="loginMethod" duration-ms="10530" started-at="2022-12-05T14:06:05Z" data-provider="loginModule" finished-at="2022-12-05T14:06:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[(//a[contains(@class,'close')])[1]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[//a[contains(text(),'Log')]]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[//button[contains(text(),'Log')]]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[//a[contains(text(),'Maybe')]]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Sujatha0711@gmail.com]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Varshini@0711]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:org.test.PacificairTesting@7085bdee]" name="afterMethod" is-config="true" duration-ms="0" started-at="2022-12-01T10:25:04Z" finished-at="2022-12-01T10:25:04Z">
+        </test-method> <!-- loginMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:org.test.PacificairTesting@72d818d1]" name="afterMethod" is-config="true" duration-ms="0" started-at="2022-12-05T14:06:16Z" finished-at="2022-12-05T14:06:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:org.test.PacificairTesting@7085bdee]" name="afterClass" is-config="true" duration-ms="0" started-at="2022-12-01T10:25:04Z" finished-at="2022-12-01T10:25:04Z">
+        <test-method status="PASS" signature="manageChkModule(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:-3, instance:org.test.PacificairTesting@72d818d1]" name="manageChkModule" duration-ms="10607" started-at="2022-12-05T14:06:16Z" data-provider="chkInModule" finished-at="2022-12-05T14:06:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[(//a[contains(text(),'Check')])[1]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Sujatha0711@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Varshini@0711]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[https://www.cebupacificair.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- manageChkModule -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:org.test.PacificairTesting@72d818d1]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2022-12-05T14:06:16Z" finished-at="2022-12-05T14:06:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:org.test.PacificairTesting@72d818d1]" name="afterMethod" is-config="true" duration-ms="2" started-at="2022-12-05T14:06:26Z" finished-at="2022-12-05T14:06:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:org.test.PacificairTesting@72d818d1]" name="beforeMethod" is-config="true" duration-ms="4" started-at="2022-12-05T14:06:26Z" finished-at="2022-12-05T14:06:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="manageBookModule(java.lang.String, java.lang.String)[pri:-2, instance:org.test.PacificairTesting@72d818d1]" name="manageBookModule" duration-ms="10289" started-at="2022-12-05T14:06:26Z" data-provider="urlModule" finished-at="2022-12-05T14:06:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.cebupacificair.com/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- manageBookModule -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:org.test.PacificairTesting@72d818d1]" name="afterMethod" is-config="true" duration-ms="0" started-at="2022-12-05T14:06:37Z" finished-at="2022-12-05T14:06:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="manageFlightStatus(java.lang.String, java.lang.String)[pri:-1, instance:org.test.PacificairTesting@72d818d1]" name="manageFlightStatus" duration-ms="8455" started-at="2022-12-05T14:06:37Z" data-provider="urlModule" finished-at="2022-12-05T14:06:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.cebupacificair.com/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- manageFlightStatus -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:org.test.PacificairTesting@72d818d1]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2022-12-05T14:06:37Z" finished-at="2022-12-05T14:06:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:org.test.PacificairTesting@72d818d1]" name="afterMethod" is-config="true" duration-ms="0" started-at="2022-12-05T14:06:45Z" finished-at="2022-12-05T14:06:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:org.test.PacificairTesting@72d818d1]" name="afterClass" is-config="true" duration-ms="1" started-at="2022-12-05T14:06:45Z" finished-at="2022-12-05T14:06:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
