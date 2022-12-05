@@ -7,8 +7,8 @@
         <methods>
           <include name="beforeClass"/>
           <include name="beforeMethod"/>
-          <include name="Book1"/>
           <include name="afterClass"/>
+          <include name="Book2"/>
           <include name="afterMethod"/>
         </methods>
       </class> <!-- org.test.BookTesting -->
