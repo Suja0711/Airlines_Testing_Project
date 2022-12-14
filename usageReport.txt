@@ -1,0 +1,190 @@
+[
+  {
+    "source": "The user should launch cebupacificair website",
+    "steps": [
+      {
+        "name": "The user should launch cebupacificair website",
+        "aggregatedDurations": {
+          "median": 6.7737701,
+          "average": 6.773770100
+        },
+        "durations": [
+          {
+            "duration": 6.7737701,
+            "location": "file:src/test/resources/Features/login.feature:4"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Pop up window should be closed",
+    "steps": [
+      {
+        "name": "Pop up window should be closed",
+        "aggregatedDurations": {
+          "median": 4.5048818,
+          "average": 4.504881800
+        },
+        "durations": [
+          {
+            "duration": 4.5048818,
+            "location": "file:src/test/resources/Features/login.feature:5"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "The user has to fill the email and password",
+    "steps": [
+      {
+        "name": "The user has to fill the email and password",
+        "aggregatedDurations": {
+          "median": 0.5629326,
+          "average": 0.562932600
+        },
+        "durations": [
+          {
+            "duration": 0.5629326,
+            "location": "file:src/test/resources/Features/login.feature:6"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "The user has to click the Login button",
+    "steps": [
+      {
+        "name": "The user has to click the Login button",
+        "aggregatedDurations": {
+          "median": 0.2224373,
+          "average": 0.222437300
+        },
+        "durations": [
+          {
+            "duration": 0.2224373,
+            "location": "file:src/test/resources/Features/login.feature:7"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "The user should be in valid login page",
+    "steps": [
+      {
+        "name": "The user should be in valid login page",
+        "aggregatedDurations": {
+          "median": 4.9796462,
+          "average": 4.979646200
+        },
+        "durations": [
+          {
+            "duration": 4.9796462,
+            "location": "file:src/test/resources/Features/login.feature:8"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "The user has to click the Manage mod Checkin",
+    "steps": [
+      {
+        "name": "The user has to click the Manage mod Checkin",
+        "aggregatedDurations": {
+          "median": 3.2127411,
+          "average": 3.212741100
+        },
+        "durations": [
+          {
+            "duration": 3.2127411,
+            "location": "file:src/test/resources/Features/manage.feature:6"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "The user has to enter username {string} and password {string}",
+    "steps": [
+      {
+        "name": "The user has to enter username \"Sujatha0711@gmail.com\" and password \"Varshini@0711\"",
+        "aggregatedDurations": {
+          "median": 2.430793,
+          "average": 2.430793000
+        },
+        "durations": [
+          {
+            "duration": 2.430793,
+            "location": "file:src/test/resources/Features/manage.feature:7"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Wait for the page to load",
+    "steps": [
+      {
+        "name": "Wait for the page to load",
+        "aggregatedDurations": {
+          "median": 1.012907900,
+          "average": 1.012907900
+        },
+        "durations": [
+          {
+            "duration": 1.0133687,
+            "location": "file:src/test/resources/Features/manage.feature:8"
+          },
+          {
+            "duration": 1.0124471,
+            "location": "file:src/test/resources/Features/manage.feature:13"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Return to url {string}",
+    "steps": [
+      {
+        "name": "Return to url \"https://www.cebupacificair.com/\"",
+        "aggregatedDurations": {
+          "median": 4.168656400,
+          "average": 4.168656400
+        },
+        "durations": [
+          {
+            "duration": 4.4569052,
+            "location": "file:src/test/resources/Features/manage.feature:9"
+          },
+          {
+            "duration": 3.8804076,
+            "location": "file:src/test/resources/Features/manage.feature:14"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "The user has to click the Manage mod Booking",
+    "steps": [
+      {
+        "name": "The user has to click the Manage mod Booking",
+        "aggregatedDurations": {
+          "median": 6.6466747,
+          "average": 6.646674700
+        },
+        "durations": [
+          {
+            "duration": 6.6466747,
+            "location": "file:src/test/resources/Features/manage.feature:12"
+          }
+        ]
+      }
+    ]
+  }
+]

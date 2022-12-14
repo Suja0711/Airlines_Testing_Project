@@ -32,6 +32,9 @@ public class ManageLoginPage extends BaseClass{
 	@FindBy(partialLinkText="Check")
 	private WebElement checkInLink;
 	
+	@FindBy(xpath="(//img[@alt='Clear'])[3]")
+	private WebElement closeBotBtn;
+	
 	/*@FindBy(xpath="//a[@class='close-button']")
 	private WebElement closeBtn;*/
 	
@@ -53,6 +56,10 @@ public class ManageLoginPage extends BaseClass{
 
 	public WebElement getCheckInLink() {
 		return checkInLink;
+	}
+	
+	public WebElement getcloseBotBtn() {
+		return closeBotBtn;
 	}
 
 /*	public WebElement getCloseBtn() {
@@ -80,18 +87,28 @@ public class ManageLoginPage extends BaseClass{
 			wt.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(closeBtnXpath)));
 			WebElement ele = driver.findElement(By.xpath(closeBtnXpath));
 			ele.click();
+			clickBtn(closeBotBtn);
 			wt.until(ExpectedConditions.elementToBeClickable(By.xpath(loginLnkXpath)));
 			WebElement loginLnk = driver.findElement(By.xpath(loginLnkXpath));
 			WebElement loginBtn = driver.findElement(By.xpath(loginBtnXpath));
 			as.moveToElement(loginLnk).click(loginBtn).perform();
+			
 			wt.until(ExpectedConditions.visibilityOf(emailTxt));//(By.xpath("//input[@type='email']")));
 			sendKeys(emailTxt, email); 
 			sendKeys(passTxt, pass);  
 			clickBtn(submitBtn);
-			//wt.until(ExpectedConditions.invisibilityOf(submitBtn));			
 			wt.until(ExpectedConditions.elementToBeClickable(By.xpath(subLnkXpath)));
 			WebElement subLnk1 = driver.findElement(By.xpath(subLnkXpath));
 			clickBtn(subLnk1);
+		}
+		
+		public void clickLoginBtnNoCredential(String closeBtnXpath) {
+			Actions as = new Actions(driver);
+			WebDriverWait wt = new WebDriverWait(driver, 5000);
+			wt.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(closeBtnXpath)));
+			WebElement ele = driver.findElement(By.xpath(closeBtnXpath));
+			ele.click();
+			clickBtn(closeBotBtn);
 		}
 		
 		
