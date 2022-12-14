@@ -3,15 +3,16 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="org.test.BookTesting">
+      <class name="org.test.PacificairTesting">
         <methods>
-          <include name="beforeClass"/>
-          <include name="beforeMethod"/>
           <include name="afterClass"/>
-          <include name="Book2"/>
           <include name="afterMethod"/>
+          <include name="loginMethod" invocation-numbers="0"/>
+          <include name="beforeClass"/>
+          <include name="abtMenu"/>
+          <include name="beforeMethod"/>
         </methods>
-      </class> <!-- org.test.BookTesting -->
+      </class> <!-- org.test.PacificairTesting -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
