@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="12" time="140.473117">
+<testcase classname="To validate login functionality of cebupacificair application" name="To validate login functionality of cebupacificair application" time="54.690711">
+<system-out><![CDATA[Given The user should launch cebupacificair website.........................passed
+When Pop up window should be closed.........................................passed
+When The user has to fill the email and password............................passed
+When The user has to click the Login button.................................passed
+Then The user should be in valid login page.................................passed
+]]></system-out>
+</testcase>
+<testcase classname="To validate manage module functionality of cebupacificair application" name="To validate Checkin functionality of manage module" time="9.544361">
+<system-out><![CDATA[Given The user has to click the Manage mod Checkin..........................passed
+When The user has to enter username "Sujatha0711@gmail.com" and password "Varshini@0711".passed
+Then Wait for the page to load..............................................passed
+Then Return to url "https://www.cebupacificair.com/"........................passed
+]]></system-out>
+</testcase>
+<testcase classname="To validate manage module functionality of cebupacificair application" name="check Booking functionality of manage module" time="8.901884">
+<system-out><![CDATA[When The user has to click the Manage mod Booking...........................passed
+Then Wait for the page to load..............................................passed
+Then Return to url "https://www.cebupacificair.com/"........................passed
+]]></system-out>
+</testcase>
+<testcase classname="To validate manage module functionality of cebupacificair application" name="check Flightstatus functionality of manage module" time="8.148718">
+<system-out><![CDATA[When The user enter origin and destination date for check status............passed
+Then Wait for the page to load..............................................passed
+Then Return to url "https://www.cebupacificair.com/"........................passed
+]]></system-out>
+</testcase>
+<testcase classname="To validate manage module functionality of cebupacificair application" name="check Add-ons functionality of manage module" time="9.746899">
+<system-out><![CDATA[When The user verify Add-ons features.......................................passed
+Then Wait for the page to load..............................................passed
+Then Return to url "https://www.cebupacificair.com/"........................passed
+]]></system-out>
+</testcase>
+<testcase classname="To validate manage module functionality of cebupacificair application" name="check Special Assistance functionality of manage module" time="6.917371">
+<system-out><![CDATA[When The user verify special assistance features............................passed
+Then Wait for the page to load..............................................passed
+Then Return to url "https://www.cebupacificair.com/"........................passed
+]]></system-out>
+</testcase>
+<testcase classname="To validate about menu functionality of cebupacificair application" name="To validate details about the website" time="6.994883">
+<system-out><![CDATA[Given The user has to click the About menu Our Story........................passed
+Then Wait for the page to load..............................................passed
+Then Return to url "https://www.cebupacificair.com/"........................passed
+]]></system-out>
+</testcase>
+<testcase classname="To validate about menu functionality of cebupacificair application" name="To validate details about media center" time="7.076688">
+<system-out><![CDATA[Given The user has to click the About menu Media Center.....................passed
+Then Wait for the page to load..............................................passed
+Then Return to url "https://www.cebupacificair.com/"........................passed
+]]></system-out>
+</testcase>
+<testcase classname="To validate about menu functionality of cebupacificair application" name="To validate details about connectivity" time="6.696003">
+<system-out><![CDATA[Given The user has to click the About menu Talk to Us.......................passed
+Then Wait for the page to load..............................................passed
+Then Return to url "https://www.cebupacificair.com/"........................passed
+]]></system-out>
+</testcase>
+<testcase classname="To validate about menu functionality of cebupacificair application" name="To validate details about Partners" time="7.116241">
+<system-out><![CDATA[Given The user has to click the About menu Campaigns & Partners.............passed
+Then Wait for the page to load..............................................passed
+Then Return to url "https://www.cebupacificair.com/"........................passed
+]]></system-out>
+</testcase>
+<testcase classname="To validate about menu functionality of cebupacificair application" name="To validate details about CompanyInfo" time="6.397508">
+<system-out><![CDATA[Given The user has to click the About menu Company Information..............passed
+Then Wait for the page to load..............................................passed
+Then Return to url "https://www.cebupacificair.com/"........................passed
+]]></system-out>
+</testcase>
+<testcase classname="To validate about menu functionality of cebupacificair application" name="To validate details about Carrers" time="8.24185">
+<system-out><![CDATA[Given The user has to click the About menu Careers..........................passed
+Then Wait for the page to load..............................................passed
+Then Return to url "https://www.cebupacificair.com/"........................passed
+]]></system-out>
+</testcase>
+</testsuite>

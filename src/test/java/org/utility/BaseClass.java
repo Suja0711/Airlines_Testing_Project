@@ -7,6 +7,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
+import java.time.Duration;
 import java.util.Date;
 import java.util.List;
 import java.util.Set;
@@ -30,13 +31,16 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseClass {
 	
 	public static WebDriver driver;
-	
+	public static Actions as;
+	public static WebDriverWait wt;
+	public static String url = "https://www.cebupacificair.com/";
 	public static WebDriver browserLaunch(String browserName)
 	{
 		if(browserName.equalsIgnoreCase("chrome"))
@@ -56,6 +60,8 @@ public class BaseClass {
 			WebDriverManager.edgedriver().setup();
 			driver = new EdgeDriver();
 		}
+		as = new Actions(driver);
+		wt = new WebDriverWait(driver, Duration.ofMinutes(5000));
 		return driver;
 	}
 	
@@ -99,9 +105,9 @@ public class BaseClass {
 		return attr;
 	}
 	//move to element
-	public static void moveToElement(WebElement target) {
-		Actions as = new Actions(driver);
-		as.moveToElement(target);
+	public static Actions moveToElement(WebElement target) {
+		//Actions as = new Actions(driver);
+		return as.moveToElement(target);
 	}
 	//drag and drop
 	public static void dragAndDrop(WebElement src, WebElement target) {
@@ -194,11 +200,9 @@ public class BaseClass {
 		driver.switchTo().window(windowname);
 	}
 	//Alert accept
-	public static String alertAccept() {
+	public static void alertAccept() {
 		Alert as = driver.switchTo().alert();
-		String alertText = as.getText();
 		as.accept();
-		return alertText;		
 	}
 	//Alert reject
 	public static String alertReject() {
