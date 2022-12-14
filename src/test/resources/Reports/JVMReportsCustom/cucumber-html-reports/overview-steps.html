@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>CebuAirportReport</td>
+      <td>13 Dec 2022, 17:41</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+      <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+  </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Average duration</th>
+            <th>Max duration</th>
+            <th>Total durations</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+              <td class="location">HooksClass.afterMethod1(Scenario)</td>
+              <td>7</td>
+              <td class="duration" data-value="3372232285">3.372</td>
+              <td class="duration" data-value="3372232285">4.348</td>
+              <td class="duration" data-value="23605625998">23.605</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">LoginSteps.pop_up_window_should_be_closed()</td>
+              <td>1</td>
+              <td class="duration" data-value="3894043900">3.894</td>
+              <td class="duration" data-value="3894043900">3.894</td>
+              <td class="duration" data-value="3894043900">3.894</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">LoginSteps.the_user_has_to_click_the_Login_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="315112500">0.315</td>
+              <td class="duration" data-value="315112500">0.315</td>
+              <td class="duration" data-value="315112500">0.315</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">LoginSteps.the_user_has_to_fill_the_email_and_password()</td>
+              <td>1</td>
+              <td class="duration" data-value="1475147999">1.475</td>
+              <td class="duration" data-value="1475147999">1.475</td>
+              <td class="duration" data-value="1475147999">1.475</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">LoginSteps.the_user_should_be_in_valid_login_page()</td>
+              <td>1</td>
+              <td class="duration" data-value="6039177801">6.039</td>
+              <td class="duration" data-value="6039177801">6.039</td>
+              <td class="duration" data-value="6039177801">6.039</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">LoginSteps.the_user_should_launch_cebupacificair_website()</td>
+              <td>1</td>
+              <td class="duration" data-value="4974378899">4.974</td>
+              <td class="duration" data-value="4974378899">4.974</td>
+              <td class="duration" data-value="4974378899">4.974</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">ManagemodSteps.return_to_url(String)</td>
+              <td>6</td>
+              <td class="duration" data-value="937883">0.000</td>
+              <td class="duration" data-value="937883">0.001</td>
+              <td class="duration" data-value="5627301">0.005</td>
+              <td class="failed">66.67%</td>
+            </tr>
+            <tr>
+              <td class="location">ManagemodSteps.wait_for_the_page_to_load()</td>
+              <td>6</td>
+              <td class="duration" data-value="670640183">0.670</td>
+              <td class="duration" data-value="670640183">1.010</td>
+              <td class="duration" data-value="4023841100">4.023</td>
+              <td class="failed">66.67%</td>
+            </tr>
+            <tr>
+              <td class="location">StepsFeature.the_user_has_to_click_the_About_menu_Campaigns_Partners()</td>
+              <td>1</td>
+              <td class="duration" data-value="3111216200">3.111</td>
+              <td class="duration" data-value="3111216200">3.111</td>
+              <td class="duration" data-value="3111216200">3.111</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">StepsFeature.the_user_has_to_click_the_About_menu_Careers()</td>
+              <td>1</td>
+              <td class="duration" data-value="4358995800">4.358</td>
+              <td class="duration" data-value="4358995800">4.358</td>
+              <td class="duration" data-value="4358995800">4.358</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">StepsFeature.the_user_has_to_click_the_About_menu_Company_Information()</td>
+              <td>1</td>
+              <td class="duration" data-value="2933225599">2.933</td>
+              <td class="duration" data-value="2933225599">2.933</td>
+              <td class="duration" data-value="2933225599">2.933</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">StepsFeature.the_user_has_to_click_the_About_menu_Media_Center()</td>
+              <td>1</td>
+              <td class="duration" data-value="2901416100">2.901</td>
+              <td class="duration" data-value="2901416100">2.901</td>
+              <td class="duration" data-value="2901416100">2.901</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">StepsFeature.the_user_has_to_click_the_About_menu_Our_Story()</td>
+              <td>1</td>
+              <td class="duration" data-value="3468456200">3.468</td>
+              <td class="duration" data-value="3468456200">3.468</td>
+              <td class="duration" data-value="3468456200">3.468</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">StepsFeature.the_user_has_to_click_the_About_menu_Talk_to_Us()</td>
+              <td>1</td>
+              <td class="duration" data-value="1920465301">1.920</td>
+              <td class="duration" data-value="1920465301">1.920</td>
+              <td class="duration" data-value="1920465301">1.920</td>
+              <td class="failed">0.00%</td>
+            </tr>
+        </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>14</td>
+            <td>30</td>
+            <td class="duration">2.100</td>
+            <td class="duration">23.605</td>
+            <td class="duration">1:3.026</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
