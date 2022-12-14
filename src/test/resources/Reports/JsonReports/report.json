@@ -1,0 +1,565 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-12-13T13:02:50.707Z",
+        "line": 3,
+        "name": "To validate login functionality of cebupacificair application",
+        "description": "",
+        "id": "to-validate-login-functionality-of-cebupacificair-application;to-validate-login-functionality-of-cebupacificair-application",
+        "after": [
+          {
+            "result": {
+              "duration": 4365639200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksClass.afterMethod1(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6528283700,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "The user should launch cebupacificair website",
+            "match": {
+              "location": "LoginSteps.the_user_should_launch_cebupacificair_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6412837900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Pop up window should be closed",
+            "match": {
+              "location": "LoginSteps.pop_up_window_should_be_closed()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 491258400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "The user has to fill the email and password",
+            "match": {
+              "location": "LoginSteps.the_user_has_to_fill_the_email_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 239047300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "The user has to click the Login button",
+            "match": {
+              "location": "LoginSteps.the_user_has_to_click_the_Login_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element \u003ca href\u003d\"javascript:void(0)\" class\u003d\"ng-star-inserted\"\u003e...\u003c/a\u003e is not clickable at point (768, 624). Other element would receive the click: \u003cdiv class\u003d\"loader-wrapper ng-tns-c0-0 ng-trigger ng-trigger-default ng-star-inserted ng-animating\" style\u003d\"\"\u003e...\u003c/div\u003e\n  (Session info: chrome\u003d108.0.5359.99)\nBuild info: version: \u00274.0.0-alpha-2\u0027, revision: \u0027f148142cf8\u0027, time: \u00272019-07-01T20:55:26\u0027\nSystem info: host: \u0027DESKTOP-H5NOQRE\u0027, ip: \u0027192.168.1.3\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_202\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\dell\\AppData\\Local...}, goog:chromeOptions: {debuggerAddress: localhost:61326}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 6edbdd415d1a8be1a813b7e56090ce1b\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:191)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:125)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:576)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:308)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)\r\n\tat org.utility.BaseClass.clickBtn(BaseClass.java:86)\r\n\tat org.stepdefinition.LoginSteps.the_user_should_be_in_valid_login_page(LoginSteps.java:70)\r\n\tat ✽.The user should be in valid login page(file:src/test/resources/Features/login.feature:8)\r\n",
+              "duration": 6368806600,
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "The user should be in valid login page",
+            "match": {
+              "location": "LoginSteps.the_user_should_be_in_valid_login_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Loginfn"
+          },
+          {
+            "name": "@AboutMenu"
+          }
+        ]
+      }
+    ],
+    "name": "To validate login functionality of cebupacificair application",
+    "description": "",
+    "id": "to-validate-login-functionality-of-cebupacificair-application",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/login.feature",
+    "tags": []
+  },
+  {
+    "line": 3,
+    "elements": [
+      {
+        "start_timestamp": "2022-12-13T13:03:15.167Z",
+        "line": 5,
+        "name": "To validate details about the website",
+        "description": "",
+        "id": "to-validate-about-menu-functionality-of-cebupacificair-application;to-validate-details-about-the-website",
+        "after": [
+          {
+            "result": {
+              "duration": 5699062000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksClass.afterMethod1(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3203577300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "The user has to click the About menu Our Story",
+            "match": {
+              "location": "StepsFeature.the_user_has_to_click_the_About_menu_Our_Story()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1012327600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Wait for the page to load",
+            "match": {
+              "location": "ManagemodSteps.wait_for_the_page_to_load()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1490500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Return to url \"https://www.cebupacificair.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.cebupacificair.com/\"",
+                  "offset": 14
+                }
+              ],
+              "location": "ManagemodSteps.return_to_url(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AboutMenu"
+          },
+          {
+            "name": "@Loginfn"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-12-13T13:03:25.094Z",
+        "line": 10,
+        "name": "To validate details about media center",
+        "description": "",
+        "id": "to-validate-about-menu-functionality-of-cebupacificair-application;to-validate-details-about-media-center",
+        "after": [
+          {
+            "result": {
+              "duration": 3072121000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksClass.afterMethod1(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3143658900,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "The user has to click the About menu Media Center",
+            "match": {
+              "location": "StepsFeature.the_user_has_to_click_the_About_menu_Media_Center()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1014281100,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Wait for the page to load",
+            "match": {
+              "location": "ManagemodSteps.wait_for_the_page_to_load()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 643400,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Return to url \"https://www.cebupacificair.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.cebupacificair.com/\"",
+                  "offset": 14
+                }
+              ],
+              "location": "ManagemodSteps.return_to_url(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AboutMenu"
+          },
+          {
+            "name": "@Loginfn"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-12-13T13:03:32.328Z",
+        "line": 15,
+        "name": "To validate details about connectivity",
+        "description": "",
+        "id": "to-validate-about-menu-functionality-of-cebupacificair-application;to-validate-details-about-connectivity",
+        "after": [
+          {
+            "result": {
+              "duration": 3541671100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksClass.afterMethod1(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2777407300,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "The user has to click the About menu Talk to Us",
+            "match": {
+              "location": "StepsFeature.the_user_has_to_click_the_About_menu_Talk_to_Us()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000343700,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Wait for the page to load",
+            "match": {
+              "location": "ManagemodSteps.wait_for_the_page_to_load()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 554900,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "Return to url \"https://www.cebupacificair.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.cebupacificair.com/\"",
+                  "offset": 14
+                }
+              ],
+              "location": "ManagemodSteps.return_to_url(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AboutMenu"
+          },
+          {
+            "name": "@Loginfn"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-12-13T13:03:39.654Z",
+        "line": 20,
+        "name": "To validate details about Partners",
+        "description": "",
+        "id": "to-validate-about-menu-functionality-of-cebupacificair-application;to-validate-details-about-partners",
+        "after": [
+          {
+            "result": {
+              "duration": 3210463500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksClass.afterMethod1(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2865713900,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "The user has to click the About menu Campaigns \u0026 Partners",
+            "match": {
+              "location": "StepsFeature.the_user_has_to_click_the_About_menu_Campaigns_Partners()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1008908500,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Wait for the page to load",
+            "match": {
+              "location": "ManagemodSteps.wait_for_the_page_to_load()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 578100,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "Return to url \"https://www.cebupacificair.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.cebupacificair.com/\"",
+                  "offset": 14
+                }
+              ],
+              "location": "ManagemodSteps.return_to_url(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AboutMenu"
+          },
+          {
+            "name": "@Loginfn"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-12-13T13:03:46.753Z",
+        "line": 25,
+        "name": "To validate details about CompanyInfo",
+        "description": "",
+        "id": "to-validate-about-menu-functionality-of-cebupacificair-application;to-validate-details-about-companyinfo",
+        "after": [
+          {
+            "result": {
+              "duration": 3406968300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksClass.afterMethod1(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\r\n\tat org.stepdefinition.StepsFeature.the_user_has_to_click_the_About_menu_Company_Information(StepsFeature.java:66)\r\n\tat ✽.The user has to click the About menu Company Information(file:src/test/resources/Features/sitefeatrues.feature:26)\r\n",
+              "duration": 2812821300,
+              "status": "failed"
+            },
+            "line": 26,
+            "name": "The user has to click the About menu Company Information",
+            "match": {
+              "location": "StepsFeature.the_user_has_to_click_the_About_menu_Company_Information()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 541900,
+              "status": "skipped"
+            },
+            "line": 27,
+            "name": "Wait for the page to load",
+            "match": {
+              "location": "ManagemodSteps.wait_for_the_page_to_load()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 230000,
+              "status": "skipped"
+            },
+            "line": 28,
+            "name": "Return to url \"https://www.cebupacificair.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.cebupacificair.com/\"",
+                  "offset": 14
+                }
+              ],
+              "location": "ManagemodSteps.return_to_url(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AboutMenu"
+          },
+          {
+            "name": "@Loginfn"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-12-13T13:03:52.982Z",
+        "line": 30,
+        "name": "To validate details about Carrers",
+        "description": "",
+        "id": "to-validate-about-menu-functionality-of-cebupacificair-application;to-validate-details-about-carrers",
+        "after": [
+          {
+            "result": {
+              "duration": 4030456100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksClass.afterMethod1(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4110115400,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "The user has to click the About menu Careers",
+            "match": {
+              "location": "StepsFeature.the_user_has_to_click_the_About_menu_Careers()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000801300,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "Wait for the page to load",
+            "match": {
+              "location": "ManagemodSteps.wait_for_the_page_to_load()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 602700,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "Return to url \"https://www.cebupacificair.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.cebupacificair.com/\"",
+                  "offset": 14
+                }
+              ],
+              "location": "ManagemodSteps.return_to_url(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AboutMenu"
+          },
+          {
+            "name": "@Loginfn"
+          }
+        ]
+      }
+    ],
+    "name": "To validate about menu functionality of cebupacificair application",
+    "description": "",
+    "id": "to-validate-about-menu-functionality-of-cebupacificair-application",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/sitefeatrues.feature",
+    "tags": [
+      {
+        "name": "@AboutMenu",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      },
+      {
+        "name": "@Loginfn",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 12
+        }
+      }
+    ]
+  }
+]
